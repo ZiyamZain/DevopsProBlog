@@ -1,0 +1,66 @@
+{
+  "id": "1af6efb7-ab88-417a-bb82-b616660e767b",
+  "version": "2.0",
+  "name": "datafetch",
+  "url": "http://localhost:4000",
+  "tests": [{
+    "id": "e3b7e98d-884d-4f03-8be4-44728bd0eac2",
+    "name": "dataload",
+    "commands": [{
+      "id": "9337aeef-a6d1-4421-bfcf-962b7b4e5c92",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1160bae-d13c-49ed-bd20-3978423cf5af",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41a531a5-bdc4-4b13-a49a-ffb66c5b5448",
+      "comment": "",
+      "command": "click",
+      "target": "css=.article-ul > li:nth-child(1)",
+      "targets": [
+        ["css=.article-ul > li:nth-child(1)", "css:finder"],
+        ["xpath=//section/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fb6b94d-b364-4de1-be69-7ce4dffa87e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) span:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1) span:nth-child(1)", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Learn Morgan - HTTP Request logger for NodeJs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ddf7c3c-15fc-4963-8f57-530799a5199e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer",
+      "targets": [
+        ["css=.footer", "css:finder"],
+        ["xpath=//footer", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1c3584a1-d396-49e8-b38c-eb6385431a26",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e3b7e98d-884d-4f03-8be4-44728bd0eac2"]
+  }],
+  "urls": ["http://localhost:4000/"],
+  "plugins": []
+}
