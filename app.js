@@ -1,4 +1,7 @@
+
+
 require('dotenv').config();
+
 const express=require('express');
 
 const app=express();
@@ -46,6 +49,8 @@ app.locals.isActiveRoute = isActiveRoute;
 app.use('/',require('./server/routes/main'));
 
 app.use('/',require('./server/routes/admin'));
+
+
 
 app.listen(PORT,()=>{
     console.log(`app listening on port ${PORT}`)
